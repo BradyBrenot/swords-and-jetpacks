@@ -3,7 +3,7 @@
  *
  *	Creation date: 30/06/2011 17:00
  */
-class SJPawn extends UTPawn;
+class SJPawn extends AOCPawn;
 
 //Gravity
 
@@ -65,6 +65,12 @@ function static float UnitsToMetres(float units)
 function static float MetresToUnits(float units)
 {
 	return units * 50.0;
+}
+
+/** Perform a jump, remember that we did this manually */
+function bool DoJump( bool bUpdating )
+{
+	return false;
 }
 
 function Vector Jump( Vector moveDirection ) {
@@ -282,6 +288,11 @@ function bool UpdatePosition(float DeltaTime)
         currentFriction = Fmin(1.0, FMax( currentFriction, decayFriction ));
 		
     return ( bCollisionLastTick );
+}
+
+simulated function TakeFallingDamage()
+{
+
 }
 
 /* Functions in case I need the pawn to do *something* when these two things start... */

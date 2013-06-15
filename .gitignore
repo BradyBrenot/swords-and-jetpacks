@@ -2,7 +2,6 @@ BUILD_SCRIPTS.bat
 COOK.bat
 Binaries
 Engine
-UDKGame
 - Editor 32-bit.bat
 - Editor 64-bit.bat
 - Launch game sdkcontent.bat

@@ -3,7 +3,7 @@
  *
  *	Creation date: 29/06/2011 22:40
  */
-class SJPlayerController extends UTPlayerController
+class SJPlayerController extends AOCPlayerController
 	dependson(SJPawn)
 	config(Game);
 	
@@ -57,7 +57,6 @@ ignores SeePlayer, HearNoise, Bump;
 		{
 			GetAxes(Pawn.Rotation,X,Y,Z);
 			  
-
 			// Update acceleration.
 			
 			maxSpeed = MetresToUnits(jPawn.WALKSPEED);
@@ -185,10 +184,10 @@ event PlayerTick( float DeltaTime )
 // This is where it gets hairy
 
 /* Override: we want to handle jumping, not the UT code */
-function CheckJumpOrDuck()
-{
-	return;
-}
+//function CheckJumpOrDuck()
+//{
+//	return;
+//}
 
 /* Input */
 exec function StartJet()

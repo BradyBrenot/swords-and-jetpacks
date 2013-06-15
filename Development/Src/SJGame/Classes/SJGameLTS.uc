@@ -3,7 +3,7 @@
  *
  *	Creation date: 29/06/2011 22:42
  */
-class SJGame extends AOCGame;
+class SJGameLTS extends AOCLTS;
 
 event PostLogin( PlayerController NewPlayer )
 {
